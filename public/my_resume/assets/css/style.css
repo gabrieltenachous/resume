@@ -242,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right no-repeat;
+  background-image: url("https://media-exp2.licdn.com/dms/image/C4D1BAQHgVbml3WKvPA/company-background_10000/0/1577378330448?e=1658415600&v=beta&t=9LHe4VNrPwY1zNTJM3C7NUMC7kzQ3NIgmrdtnJgAO6w");
   background-size: cover;
   position: relative;
 }
