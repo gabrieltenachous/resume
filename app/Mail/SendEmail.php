@@ -28,7 +28,7 @@ class SendEmail extends Mailable
      * @return $this
      */
     public function build()
-    {
-        return $this->from("tabu@tabu.com.br")->subject($request->subject)->view('projectMail');
+    {  
+        return $this->view('projectMail')->subject($this->request);
     }
 }

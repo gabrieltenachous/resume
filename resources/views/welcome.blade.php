@@ -19,6 +19,7 @@
   <link href="/my_resume/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="/my_resume/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> 
   <link href="/my_resume/assets/css/style.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -156,7 +157,7 @@
         </div> 
         <div class="row skills-content"> 
           <div class="col-lg-4"> 
-            <strong>+ 3 anos</strong>
+            <strong>- 3 anos</strong>
             <div class="progress">
               <span class="skill">HTML *<i class="val">100%</i></span>
               <div class="progress-bar-wrap">
@@ -201,7 +202,7 @@
             </div> 
           </div> 
           <div class="col-lg-4">
-            <strong>+ 2 anos</strong>
+            <strong>- 2 anos</strong>
             <div class="progress">
               <span class="skill">PHP *<i class="val">100%</i></span>
               <div class="progress-bar-wrap">
@@ -246,7 +247,7 @@
             </div>
           </div> 
           <div class="col-lg-4"> 
-            <strong>+ 1 anos</strong>
+            <strong>- 1 ano</strong>
             <div class="progress">
               <span class="skill">Symfony <i class="val">40%</i></span>
               <div class="progress-bar-wrap">
@@ -325,7 +326,7 @@
             <div class="col-lg-6">
               <div class="resume-item">
                 <h4>Vision Developer</h4>
-                <h5>2019 - 2021</h5>
+                <h5>2020 - 2021</h5>
                 <p><em>Empresa onde estagiei e aprendi grande parte das tecnologias que uso hoje</em></p>
                 <ul>
                   <li>Aprendi PHP, Laravel, Jquery e MYSQL em menos de um mês</li>  
@@ -464,71 +465,7 @@
     </section> 
   
  
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Enviar um E-mail</h2>
-        </div>
-
-        <div class="row mt-1">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Localização:</h4>
-                <p>Rua Santa Catarina, Vila Hepacare,Lorena - SP</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>gabrielbromo@hotmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Telefone:</h4>
-                <p>+55 (12) 99117 - 1442</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0"> 
-            <form action="/post_email" method="post" content="{{ csrf_token() }}" role="form" class="php-email-form">
-              @csrf
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Mensagem" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Carregando</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Sua mensagem foi mandado com sucesso para (gabrielbromo@hotmail.com)!</div>
-              </div>
-              <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
-              <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section> 
+     
 
   </main> 
 
@@ -574,8 +511,8 @@
   <script src="/my_resume/assets/vendor/typed.js/typed.min.js"></script>
   <script src="/my_resume/assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="/my_resume/assets/vendor/php-email-form/validate.js"></script>
-
- 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="/my_resume/assets/js/main.js"></script> 
 </body> 
 </html>

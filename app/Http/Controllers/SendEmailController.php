@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Mail;
 class SendEmailController extends Controller
 {
     public function save(Request $request){ 
-        Mail::to('gabrielbromo@hotmail.com')->send(new SendEmail($request));
-        return response()->json('ok',200);
+        Mail::to('gabrielbromo@hotmail.com')->send(new SendEmail($request)); 
+        return response()->json('Email enviado com sucesso');
     }
 }
